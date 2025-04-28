@@ -330,3 +330,161 @@ body {
   color: var(--color-gray-2);
   transition: 0.3s;
 }
+
+.process {
+  padding: 80px;
+}
+.process_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  gap: 2em;
+}
+
+.process_video {
+  position: relative;
+  width: 100%;
+}
+.process_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border: none;
+  aspect-ratio: 1 / 1;
+  width: 3em;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.process_video > video {
+  width: 100%;
+
+}
+.process_button > i {
+  translate: 1px;
+}
+.process_button:hover {
+  cursor: pointer;
+  background: #0aa;
+}
+.industries  {
+  background: var(--color-grey-5);
+  padding: 80px 0;
+}
+.industries_wrap  {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2em;
+
+}
+.industries_item  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  text-align: center;
+  max-width: 200px;
+  justify-self: center;
+  width: 100%;
+}
+.industries_icon  {
+  font-size: var(--font-xl);
+}
+.industries_title  {
+  font-weight: 500;
+  font-size: var(--font-xs);
+  color: var(--color-grey-1);
+  text-transform: uppercase;
+}
+.industries_text  {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-s);
+  color: var(--color-grey-3);
+}
+
+.review{
+  background: var(--color-accent);
+  color: var(--color-white);
+
+}
+
+.review_wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+.review_box{
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 600px;
+}
+
+.review_text{
+  color: var(--color-white);
+}
+
+.review_author{
+  color: var(--color-white);
+}
+
+.review_pages{
+  position: absolute;
+  height: 3px;
+  display: flex;
+  gap: 10px;
+  bottom: 2em;
+}
+
+.review_line{
+  height: 100%;
+  width: 30px;
+  background: var(--color-white);
+  opacity: 0.5;
+}
+
+.review_active{
+  opacity: 1;
+}
+
+.review_arrow{
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  font-size: var(--fz-xl);
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.review_arrow:hover{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+
+.review_arrow_left{
+  left: 1em;
+
+}
+
+.review_arrow_right{
+  right: 1em;
+
+}
