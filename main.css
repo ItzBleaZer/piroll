@@ -524,6 +524,12 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr 4fr 1fr;
+  grid-template-areas: 
+  "name email"
+  "title title"
+  "text text"
+  "button button";
+  gap: 1em;
 
 }
 .contact_input{
@@ -532,11 +538,32 @@ body {
   border: 1px solid #000000;
 }
 .contact_input_name{
-
+  grid-area: name;
 }
 .contact_input_email{
-
+    grid-area: email;
 }
 .contact_input_title{
-
+    grid-area: text;
+}
+.contant_input_text{
+  grid-area: text;
+}
+.contant_button{
+  grid-area: button;
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-radius: 4px;
+  padding: 8px 32px;
+  justify-self: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contant_button:hover{
+  background: #929292;
+  transition: 0.3s;
+}
+.contant_button:active{
+  background: #c0c0c0;
+  transition: 0.3s;
 }
