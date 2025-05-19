@@ -4,7 +4,7 @@
   --color-accent: #10c9c3;
   --color-accent-hover: #0aa;
   --color-accent-active: #088;
-  --color-black: #000;
+  --color-black: #171147;
   --color-grey-1: #222;
   --color-grey-2: #555;
   --color-grey-3: #888;
@@ -59,7 +59,7 @@ button {
 }
 
 .container {
-  width: 94%;
+  width: 90%;
   height: 100%;
   max-width: 1600px;
   margin: auto;
@@ -134,7 +134,7 @@ button {
 }
 
 .main_button {
-  padding: 16px 42px;
+  padding: 1em 3em;
   text-transform: uppercase;
   background: var(--color-accent);
   border: none;
@@ -595,26 +595,53 @@ transition: 0.3s;
   transition: 0.3s;
 }
 .footer{
-  
+  background: var(--color-black);
+  padding: 80px 0;
 }
 .footer_wrap{
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 3em;
+  color: var(--color-white);
 }
-.footer_item{
-  
+.footer_block{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em
 }
-.footer_info{
-  
+.footer_heading{
+  padding-bottom: 1em;
+  font-weight: 500;
+  font-size: var(--font-l);
 }
 .footer_text{
-  
-}
-.footer_contact{
-  
+  color: var(--color-white);
 }
 .footer_social{
-  
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  gap: 1em  2em;
 }
 .footer_link{
-  
+  color: var(--color-accent);
+}
+
+@media screen and (min-width: 320px) and (max-width: 567px){
+  .common_heading{
+    font-size: var(--font-l);
+  }
+  .common_text{
+    font-size: var(--font-m);
+  }
+  .main_wrap{
+    align-items: center;
+  }
+  .main_block{
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 567px) and (max-width: 768px){
+
 }
